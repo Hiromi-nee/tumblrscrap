@@ -9,7 +9,7 @@ API_KEY = 'YOURAPIHERE'
 #scraps are in JSON
 #params = ARGV.getopts('', 's:sei.neesan.org','t:hikasa youko','l:1', 'h')
 params = ARGV.getopts('s:t:l:rh')
-p params
+#p params
 if params['h']
   print "SCRAP! Tumblr " + Version + "\n"
   print "USAGE: ruby scrap.rb [options]\n"

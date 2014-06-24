@@ -19,7 +19,7 @@ def repl(site,tag,limit,api_key)
       STDOUT.flush
       input = gets.chomp
       magic=input.split(/\s/)
-      print magic
+#      print magic
       option = ""
       for opt in 1 ... magic.size
         option = option + magic[opt]+" "
