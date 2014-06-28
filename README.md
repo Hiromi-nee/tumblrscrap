@@ -10,4 +10,4 @@ USAGE: ruby scrap.rb [options]
  -s url     URL of target tumblr blog
  -t tag     Tag
  -l limit   Accepts a number. Number of posts to fetch
- -r                 Runs repl environment
+ -r         Runs repl environment
