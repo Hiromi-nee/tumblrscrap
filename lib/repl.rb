@@ -6,7 +6,7 @@ def repl(site,tag,limit,api_key)
   input = ""
  
   commands = {
-    "help" => lambda { |i| print "Options: help, seturl, settag, setlimit, run\n" },
+    "help" => lambda { |i| print "Options:\nhelp\t\tPrint the help menu\nseturl\t\tSet Tumblr site link\nsettag\t\tSet search tag\nsetlimit\tSet number of posts to display\nrun\t\tRun job\n" },
     "seturl" => lambda {|url| @site = url},
     "settag" => lambda {|tag| @tag = tag},
     "setlimit" => lambda {|limit| @limit = limit},
@@ -19,7 +19,7 @@ def repl(site,tag,limit,api_key)
       STDOUT.flush
       input = gets.chomp
       magic=input.split(/\s/)
-#      print magic
+      print magic
       option = ""
       for opt in 1 ... magic.size
         option = option + magic[opt]+" "
