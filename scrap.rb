@@ -5,7 +5,7 @@ Version = "0.2"
 API_KEY = 'YOURAPIKEYHERE'
 @tag="hikasa youko"
 @site="sei.neesan.org"
-@limit="1"
+@limit="60"
 
 params = ARGV.getopts('s:t:l:rh')
 p params
@@ -23,7 +23,7 @@ elsif params['r']
 elsif params['s'] && params['t']
   @site = params['s']
   @tag = params['t']
-  params['l'] ? @limit = params['l'] : @limit ="1"
+  params['l'] ? @limit = params['l'] : @limit ="60"
 else
   print "Run \"ruby scrap.rb -h\" for help and more options.\n"
   exit
